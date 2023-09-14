@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController" stylesheets="styles.css">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="0.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Username">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="75.0" left="75.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Password" GridPane.rowIndex="1">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="375.0" left="75.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="username" promptText="Enter username here" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets bottom="75.0" left="-50.0" right="150.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="pwd" promptText="Enter password here" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="375.0" left="-50.0" right="150.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#OnLogin" text="Login" fx:id="login" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="275.0" />
+         </GridPane.margin>
+      </Button>
+      <Hyperlink onAction="#onForgotPwd" text="Forgot Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="280.0" top="75.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <Hyperlink onAction="#OnCreateNewAcc" text="Create new Account" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets top="230.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <Label text="Inventory Management" fx:id="invMan" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets bottom="300.0" left="-170.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="fgtPwd" prefHeight="32.0" prefWidth="327.0" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets top="300.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="mismatchError" prefHeight="28.0" prefWidth="238.0" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="75.0" top="90.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

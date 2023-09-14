@@ -1,0 +1,43 @@
+/* styles.css */
+
+/* Styling for the overall GridPane */
+.root {
+    -fx-background-color: black; /* Set background color to black */
+}
+
+/* Styling for the Labels */
+.label {
+    -fx-text-fill: white; /* Set text color to white */
+}
+
+/* Styling for the TextFields */
+.text-field{
+    -fx-text-fill: white; /* Set text color to white */
+    -fx-background-color: black; /* Set background color to black */
+    -fx-border-color: rgb(65, 15, 245); /* Add white border */
+    -fx-border-width: 3px; /* Set border width to 1px */
+    -fx-border-radius: 10px; /* Add rounded corners to the borders */
+}
+
+/* Styling for the Button */
+.button {
+    -fx-text-fill: white; /* Set text color to white */
+    -fx-background-color: rgb(10, 104, 245); /* Set background color to black */
+    -fx-border-color: rgb(65, 15, 245); /* Add white border */
+    -fx-border-width: 3px; /* Set border width to 1px */
+    -fx-border-radius: 10px; /* Add rounded corners to the borders */
+}
+
+/* Styling for the Inventory Management label (fx:id="invMan") */
+#invMan,#CrAc,#lblHeading,#lblSubheading,#lblTotalProducts {
+    -fx-text-fill: rgb(184, 174, 251); /* Set text color to violet */
+    /* Add any other custom styles for the Inventory Management label here */
+}
+
+#login,#CreateAcc{
+    -fx-text-fill: rgb(18, 18, 18); /* Set text color to white */
+    -fx-background-color: rgb(68, 247, 88); /* Set background color to black */
+    -fx-border-color:rgb(68, 247, 88);
+    -fx-border-radius: 1px;
+}
+
